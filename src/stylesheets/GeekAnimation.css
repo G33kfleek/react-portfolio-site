@@ -1,0 +1,38 @@
+@keyframes rainAnimation {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.geek-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.rain-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rain-item {
+  position: absolute;
+  top: -10%;
+  left: 100%;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  animation: rainAnimation 3s infinite linear;
+  animation-delay: calc(var(--delay) * -1s);
+}
+
+/* Adjust the --delay value to change the speed of rain */

@@ -1,0 +1,39 @@
+.sidebar {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  background-color: #e5e5e5;
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,147 @@
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 150vh;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+  cursor: none;
+  pointer-events: none;
+  justify-content: center;
+  
+}
+
+.welcome-content {
+  display: flex;
+  flex: 1; /* Take up remaining vertical space */
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50vh;
+}
+
+.scroll-content {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 100px); /* Adjust the value based on your needs */
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e4053; /* Update with your desired color */
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+li {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+
+
+/* Cursor Animation  */
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #FF9800;
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.name-container {
+  position: relative;
+  display: inline-block;
+}
+
+.name {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF9800;
+
+}
+
+
+
+
+
+@keyframes cursor-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  background-color: #ff9800;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Screen Responsiveness */
+@media screen and (max-width: 600px) {
+  .skill {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .skill {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .skill {
+    width: 50px;
+    height: 50px;
+    font-size: 9px;
+  }
+}

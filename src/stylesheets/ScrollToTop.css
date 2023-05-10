@@ -1,0 +1,21 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.scroll-top-btn:hover {
+  background-color: rgb(167, 96, 11);
+  color: white;
+}
+
+.up-arrow-icon {
+  color: white;
+  font-size: 24px;
+}
