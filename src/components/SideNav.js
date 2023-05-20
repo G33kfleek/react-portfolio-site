@@ -36,6 +36,9 @@ function SideNavigation() {
         className={`sidenav ${isSideNavOpen ? 'open' : ''}`}
       >
         <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Contact me</a>
+
       </div>
     </div>
   );
