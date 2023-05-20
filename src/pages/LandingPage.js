@@ -2,7 +2,7 @@ import React , { useEffect, useRef } from 'react';
 import '../stylesheets/LandingPage.css'; // Import the CSS file
 import '../stylesheets/GeekAnimation.css';
 import ScrollToTopButton from'../components/ScrollToTopButton';
-import Sidebar from '../components/Sidebar';
+import SideNavigation from '../components/SideNav';
 import { useSpring, animated } from 'react-spring';
 import Typewriter from 'typewriter-effect';
 import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
@@ -17,8 +17,10 @@ function LandingPage() {
     <div className="landing-page">
       {/* Rest of the LandingPage component */}
       <animated.div style={styles}>
-        <Sidebar/>
         <div className="welcome-screen">
+          <Element name="section0" className="section">
+            <SideNavigation/>
+          </Element>
           <Element name="section1" className="section">
             <div className="welcome-content">
             <h1>Welcome!</h1>

@@ -5,8 +5,7 @@
   height: 150vh;
   overflow-y: auto;
   background-color: #f4f4f4;
-  cursor: none;
-  pointer-events: none;
+  cursor: pointer;
   justify-content: center;
   
 }
