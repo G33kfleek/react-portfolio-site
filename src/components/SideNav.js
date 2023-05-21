@@ -4,7 +4,6 @@ import avatarImage from '../assets/images/avatar-brad.jpeg'; // Replace with you
 
 import { FaBars } from 'react-icons/fa';
 
-
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const sideNavRef = useRef(null);
