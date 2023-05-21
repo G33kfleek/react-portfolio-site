@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../stylesheets/SideNav.css';
-import avatarImage from '../assets/images/avatarBrad.png'; // Replace with your avatar image
+import avatarImage from '../assets/avatarBrad.png'; // Replace with your avatar image
 
 import { FaBars } from 'react-icons/fa';
 
@@ -27,7 +27,7 @@ function SideNavigation() {
   }, []);
 
   return (
-    <div className='sidenav-cont'>
+    <div className="sidenav-cont">
       <header>
         <div
           className="hamburger"
