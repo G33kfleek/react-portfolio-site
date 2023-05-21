@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../stylesheets/SideNav.css';
+import avatarImage from '../assets/images/avatar-brad.jpeg'; // Replace with your avatar image
+
 import { FaBars } from 'react-icons/fa';
+
 
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
