@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../stylesheets/SideNav.css';
-import avatarImage from '../assets/avatar.png'; // Replace with your avatar image
+
 
 import { FaBars } from 'react-icons/fa';
 
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const sideNavRef = useRef(null);
-
+  const avatarImage = require('./avatar.png');
+  
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
   };
