@@ -1,24 +1,33 @@
 .sidenav {
   width: 0;
   height: 100%;
-  background-color: #dbdbdb;
+  background-color: #6e6e6e;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
   position: fixed;
   top: 0;
   left: 0;
+  outline: none;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
+.sidenav-cont{ 
+  -webkit-backface-visibility:  hidden;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
-
 
 .hamburger {
   display: flex;
@@ -37,4 +46,8 @@
 
 .open {
   width: 250px;
+  -webkit-backface-visibility:  hidden;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }

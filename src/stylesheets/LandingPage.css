@@ -6,7 +6,7 @@
   overflow-y: auto;
   background-color: #f4f4f4;
   cursor: pointer;
-
+  outline: none;
 }
 
 .welcome-content {
@@ -56,19 +56,19 @@ li {
   left: 0;
   width: 2px;
   height: 100%;
-  background-color: #FF9800;
+  background-color: #ff9800;
   animation: cursor-blink 1s infinite;
 }
 
 @keyframes cursor-blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
 }
-
 
 .name-container {
   position: relative;
@@ -79,12 +79,8 @@ li {
   display: inline-block;
   font-size: 24px;
   font-weight: bold;
-  color: #FF9800;
-
+  color: #ff9800;
 }
-
-
-
 
 @keyframes cursor-animation {
   0% {
@@ -134,11 +130,10 @@ li {
 
     display: none;
   }
-  .welcome-screen{
+  .welcome-screen {
     display: flex;
-    }
+  }
 }
-
 
 @media screen and (max-width: 420px) {
   .skill {

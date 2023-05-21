@@ -1,7 +1,6 @@
-import React, {useState, useEffect, useRef  } from 'react';
-import  '../stylesheets/SideNav.css';
+import React, { useState, useEffect, useRef } from 'react';
+import '../stylesheets/SideNav.css';
 import { FaBars } from 'react-icons/fa';
-
 
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -15,6 +14,7 @@ function SideNavigation() {
     if (sideNavRef.current && !sideNavRef.current.contains(event.target)) {
       setIsSideNavOpen(false);
     }
+    event.preventDefault();
   };
 
   useEffect(() => {
@@ -25,10 +25,19 @@ function SideNavigation() {
   }, []);
 
   return (
-    <div>
+    <div className='sidenav-cont'>
       <header>
-        <div className="hamburger" onClick={(e) => { e.stopPropagation(); toggleSideNav(); }}>
+        <div
+          className="hamburger"
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleSideNav();
+          }}
+        >
           <FaBars />
+        </div>
+        <div className="avatar-container">
+          <img src={avatarImage} alt="Avatar" className="avatar-image" />
         </div>
       </header>
       <div
@@ -38,7 +47,6 @@ function SideNavigation() {
         <a href="#">Home</a>
         <a href="#">About me</a>
         <a href="#">Contact me</a>
-
       </div>
     </div>
   );
