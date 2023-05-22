@@ -29,6 +29,15 @@
   transition: 0.3s;
 }
 
+.avatar-container{
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links{
+  display:
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;

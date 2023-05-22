@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../stylesheets/SideNav.css';
-
+import Avatar from 'react-avatar';
 
 import { FaBars } from 'react-icons/fa';
 
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const sideNavRef = useRef(null);
-  const avatarImage = require('./avatar.png');
+
   
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
@@ -40,16 +40,27 @@ function SideNavigation() {
           <FaBars />
         </div>
         <div className="avatar-container">
-          <img src={avatarImage} alt="Avatar" className="avatar-image" />
+         
         </div>
       </header>
       <div
         ref={sideNavRef}
         className={`sidenav ${isSideNavOpen ? 'open' : ''}`}
       >
-        <a href="#">Home</a>
-        <a href="#">About me</a>
-        <a href="#">Contact me</a>
+        <div className="avatar-container">
+          <Avatar
+            name="Yalo Brad"
+            size="150"
+            round={true}
+            color="#ff0000" // Set the background color to red
+            githubHandle="g33kfleek"
+          />
+        </div>
+        <div className = "nav-links">
+          <a href="#">Home</a>
+          <a href="#">About me</a>
+          <a href="#">Contact me</a>
+        </div>
       </div>
     </div>
   );
