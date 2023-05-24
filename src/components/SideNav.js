@@ -7,10 +7,15 @@ import { FaBars } from 'react-icons/fa';
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const sideNavRef = useRef(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const handleClickOutside = (event) => {
@@ -58,8 +63,20 @@ function SideNavigation() {
         </div>
         <div className = "nav-links">
           <a href="#">Home</a>
-          <a href="#">About me</a>
-          <a href="#">Contact me</a>
+          
+          <div className="dropdown">
+            <button className="dropdown-toggle" onClick={toggleDropdown}>
+              about
+            </button>
+            {isDropdownOpen && (
+              <div className="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+              </div>
+            )}
+            <a href="#">Contact</a>
+         </div>
         </div>
       </div>
     </div>

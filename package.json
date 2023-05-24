@@ -7,6 +7,7 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
+    "react-sidebar": "^3.0.2",
     "react-spring": "^9.7.1",
     "react-typist": "^2.0.5",
     "typewriter-effect": "^2.19.0"

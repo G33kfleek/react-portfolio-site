@@ -1,7 +1,7 @@
-import React , { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../stylesheets/LandingPage.css'; // Import the CSS file
 import '../stylesheets/GeekAnimation.css';
-import ScrollToTopButton from'../components/ScrollToTopButton';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 import SideNavigation from '../components/SideNav';
 import { useSpring, animated } from 'react-spring';
 import Typewriter from 'typewriter-effect';
@@ -13,30 +13,36 @@ function LandingPage() {
     scroll.scrollToTop();
   };
 
-  return(
+  return (
     <div className="landing-page">
       {/* Rest of the LandingPage component */}
       <animated.div style={styles}>
         <div className="welcome-screen">
           <Element name="section0" className="section">
-            <SideNavigation/>
+            <SideNavigation />
           </Element>
           <Element name="section1" className="section">
             <div className="welcome-content">
-            <h1>Welcome!</h1>
+              <h1>Welcome!</h1>
               <div className="name-container">
                 <span className="cursor"></span>
-                  <div className="name">
-                      <Typewriter 
-                        options={{ 
-                        strings:["This is my Portfolio Website","I'm Yalo Bradburry.","I'm a Developer💻.", "Graphic Designer✨.", "And a Content Creator🎞🎮."],
-                        autoStart:true,
-                        delay:80,
-                        loop:true
-                        }}
-                    /> 
-                  </div>
+                <div className="name">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        'This is my Portfolio Website',
+                        "I'm Yalo Bradburry.",
+                        "I'm a Developer💻.",
+                        'Graphic Designer✨.',
+                        'Video Editor🎞🎮.',
+                      ],
+                      autoStart: true,
+                      delay: 80,
+                      loop: true,
+                    }}
+                  />
                 </div>
+              </div>
             </div>
           </Element>
           <Element name="section2" className="section">
@@ -47,18 +53,24 @@ function LandingPage() {
                   <div className="skill">Coding</div>
                   <div className="skill">Video Editing</div>
               </ul> */}
-              <Typewriter 
-                        options={{ 
-                        strings:["Website is still Development 🛠⛏💻", "Coming Soon...", "Here's my Contacts though😎", "Phone : +254 798362712", "Email: braddconnel@gmail.com"],
-                        autoStart:true,
-                        delay:80,
-                        loop:true
-                        }}
-                    /> 
+              <Typewriter
+                options={{
+                  strings: [
+                    'Website is still Development 🛠⛏💻',
+                    'Coming Soon...',
+                    "Here's my Contacts though😎",
+                    'Phone : +254 798362712',
+                    'Email: braddconnel@gmail.com',
+                  ],
+                  autoStart: true,
+                  delay: 80,
+                  loop: true,
+                }}
+              />
             </div>
           </Element>
-        </div>  
-        <ScrollToTopButton/>
+        </div>
+        <ScrollToTopButton />
       </animated.div>
     </div>
   );
