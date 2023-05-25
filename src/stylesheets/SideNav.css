@@ -10,6 +10,7 @@
   left: 0;
   outline: none;
   z-index: 10;
+  
   -moz-tap-highlight-color: transparent;
   -ms-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
@@ -21,15 +22,19 @@
   -ms-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
 }
-.sidenav a {
+.sidenav a, .sidenav button {
+  display:flex;
+  justify-content: flex-start;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
-  display: block;
   transition: 0.3s;
   padding-top: 20px;
+  background-color: #6e6e6e00;
+  border: none;
+  width: 100%;
 }
 
 .avatar-container{
@@ -55,11 +60,18 @@
   margin: 10px;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .dropdown button:hover {
   color: #ff9f0f;
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(104, 39, 9);
 }
 
+
+.dropdown-content a{
+  display: flex;
+  font-size: 15px;
+  margin-right: 40px;
+  background-color: rgb(88, 88, 88);
+}
 .open {
   width: 250px;
   -webkit-backface-visibility:  hidden;
@@ -67,3 +79,4 @@
   -ms-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
 }
+

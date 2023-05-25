@@ -34,7 +34,7 @@ function LandingPage() {
                         "I'm Yalo Bradburry.",
                         "I'm a Developer💻.",
                         'Graphic Designer✨.',
-                        'Video Editor🎞🎮.',
+                        'and a Video Editor🎞🎮.',
                       ],
                       autoStart: true,
                       delay: 80,

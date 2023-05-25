@@ -66,13 +66,13 @@ function SideNavigation() {
           
           <div className="dropdown">
             <button className="dropdown-toggle" onClick={toggleDropdown}>
-              about
+              About
             </button>
             {isDropdownOpen && (
               <div className="dropdown-content">
-                <a href="#">Option 1</a>
-                <a href="#">Option 2</a>
-                <a href="#">Option 3</a>
+                <a href="#">Graphic Design</a>
+                <a href="#">Video Editor</a>
+                <a href="#">Coder</a>
               </div>
             )}
             <a href="#">Contact</a>
