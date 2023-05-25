@@ -44,7 +44,7 @@ function LandingPage() {
                   />
                 </div>
               </div>
-              <DefButton label="Work Links" />
+              <DefButton  href="#"label="Work Links" />
             </div>
           </Element>
           <Element name="section2" className="section">
