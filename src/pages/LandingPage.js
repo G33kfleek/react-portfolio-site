@@ -34,8 +34,8 @@ function LandingPage() {
                         'This is my Portfolio Website',
                         "I'm Yalo Bradburry.",
                         "I'm a Developer💻.",
-                        'Graphic Designer✨.',
-                        'and a Video Editor🎞🎮.',
+                        'Graphic Designer✨',
+                        '...and a Video Editor🎞.',
                       ],
                       autoStart: true,
                       delay: 50,
@@ -44,7 +44,7 @@ function LandingPage() {
                   />
                 </div>
               </div>
-              <DefButton  href="#"label="Work Links" />
+              <DefButton  href="#"label="Portfolio Links" />
             </div>
           </Element>
           <Element name="section2" className="section">
