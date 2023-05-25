@@ -3,6 +3,7 @@ import '../stylesheets/LandingPage.css'; // Import the CSS file
 import '../stylesheets/GeekAnimation.css';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import SideNavigation from '../components/SideNav';
+import DefButton from '../components/DefaultButton';
 import { useSpring, animated } from 'react-spring';
 import Typewriter from 'typewriter-effect';
 import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
@@ -37,12 +38,13 @@ function LandingPage() {
                         'and a Video Editor🎞🎮.',
                       ],
                       autoStart: true,
-                      delay: 80,
+                      delay: 50,
                       loop: true,
                     }}
                   />
                 </div>
               </div>
+              <DefButton label="Work Links" />
             </div>
           </Element>
           <Element name="section2" className="section">
