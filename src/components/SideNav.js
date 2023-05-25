@@ -19,6 +19,7 @@ function SideNavigation() {
     setIsSideNavOpen(!isSideNavOpen);
   };
 
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };

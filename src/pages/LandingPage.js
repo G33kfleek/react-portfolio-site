@@ -13,7 +13,9 @@ function LandingPage() {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
-
+  const handleRedirect = (url) => {
+    window.location.href = url;
+  };
   return (
     <div className="landing-page">
       {/* Rest of the LandingPage component */}
@@ -44,7 +46,10 @@ function LandingPage() {
                   />
                 </div>
               </div>
-              <DefButton  href="#"label="Portfolio Links" />
+              <DefButton
+                onClick={() => handleRedirect('https://linktr.ee/g33kfleek')}
+                label="Portfolio Links"
+              />
             </div>
           </Element>
           <Element name="section2" className="section">
@@ -63,6 +68,9 @@ function LandingPage() {
                     "Here's my Contacts though😎",
                     'Phone : +254 798362712',
                     'Email: braddconnel@gmail.com',
+                    '...aaaaand laslty',
+                    ' heres my linktree 👌😉...',
+                    'https://linktr.ee/g33kfleek',
                   ],
                   autoStart: true,
                   delay: 80,
