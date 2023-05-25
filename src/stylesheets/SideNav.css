@@ -60,11 +60,27 @@
   margin: 10px;
 }
 
+.back-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: #838180;
+  width: 80%;
+  height: 30px;
+
+
+}
+
+.back-button-cont{
+  display: flex;
+  justify-content: center;
+}
 .sidenav a:hover, .dropdown button:hover {
   color: #ff9f0f;
   background-color: rgb(104, 39, 9);
 }
-
 
 .dropdown-content a{
   display: flex;

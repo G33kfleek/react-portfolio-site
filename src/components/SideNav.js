@@ -2,14 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../stylesheets/SideNav.css';
 import Avatar from 'react-avatar';
 
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaArrowLeft } from 'react-icons/fa';
 
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const sideNavRef = useRef(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
   };
@@ -44,9 +43,6 @@ function SideNavigation() {
         >
           <FaBars />
         </div>
-        <div className="avatar-container">
-         
-        </div>
       </header>
       <div
         ref={sideNavRef}
@@ -61,9 +57,15 @@ function SideNavigation() {
             githubHandle="g33kfleek"
           />
         </div>
-        <div className = "nav-links">
+        <div className="back-button-cont">
+          <div className="back-button" onClick={toggleSideNav}>
+            <FaArrowLeft />
+              Close
+          </div>
+        </div>
+        <div className="nav-links">
           <a href="#">Home</a>
-          
+
           <div className="dropdown">
             <button className="dropdown-toggle" onClick={toggleDropdown}>
               About
@@ -76,7 +78,7 @@ function SideNavigation() {
               </div>
             )}
             <a href="#">Contact</a>
-         </div>
+          </div>
         </div>
       </div>
     </div>
