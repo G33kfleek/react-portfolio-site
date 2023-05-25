@@ -2,7 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../stylesheets/SideNav.css';
 import Avatar from 'react-avatar';
 
-import { FaBars, FaArrowLeft } from 'react-icons/fa';
+import {
+  FaBars,
+  FaArrowLeft,
+  FaHome,
+  FaPhone,
+  FaInfoCircle,
+} from 'react-icons/fa';
 
 function SideNavigation() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -48,6 +54,11 @@ function SideNavigation() {
         ref={sideNavRef}
         className={`sidenav ${isSideNavOpen ? 'open' : ''}`}
       >
+        <div className="back-button-cont">
+          <div className="back-button" onClick={toggleSideNav}>
+            <FaArrowLeft />
+          </div>
+        </div>
         <div className="avatar-container">
           <Avatar
             name="Yalo Brad"
@@ -57,27 +68,27 @@ function SideNavigation() {
             githubHandle="g33kfleek"
           />
         </div>
-        <div className="back-button-cont">
-          <div className="back-button" onClick={toggleSideNav}>
-            <FaArrowLeft />
-              Close
-          </div>
-        </div>
-        <div className="nav-links">
-          <a href="#">Home</a>
 
+        <div className="nav-links">
+          <a href="#">
+            <FaHome className="nav-icons" /> Home
+          </a>
           <div className="dropdown">
             <button className="dropdown-toggle" onClick={toggleDropdown}>
+              <FaInfoCircle className="nav-icons" />
               About
             </button>
             {isDropdownOpen && (
               <div className="dropdown-content">
                 <a href="#">Graphic Design</a>
-                <a href="#">Video Editor</a>
+                <a href="#"> Video Edits</a>
                 <a href="#">Coder</a>
               </div>
             )}
-            <a href="#">Contact</a>
+            <a href="#">
+              <FaPhone className="nav-icons" />
+              Contact
+            </a>
           </div>
         </div>
       </div>

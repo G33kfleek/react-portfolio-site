@@ -3,7 +3,7 @@
   height: 100%;
   background-color: #6e6e6e;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 20px;
   transition: 0.5s;
   position: fixed;
   top: 0;
@@ -31,15 +31,24 @@
   font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
   transition: 0.3s;
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: #6e6e6e00;
   border: none;
   width: 100%;
 }
 
+.open {
+  width: 250px;
+  -webkit-backface-visibility:  hidden;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .avatar-container{
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .nav-links{
@@ -49,13 +58,18 @@
   
 }
 
+.nav-icons{
+  padding-right: 20px;
+}
+
+
 .hamburger {
   display: flex;
   flex-direction: column;
   cursor: pointer;
   width: 30px;
-  height: 45px;
-  font-size: 20px;
+  height: 22px;
+  font-size: 30px;
   padding: 10px;
   margin: 10px;
 }
@@ -64,20 +78,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 0px solid black;
   border-radius: 5%;
   background-color: #838180;
   width: 80%;
   height: 30px;
-
-
 }
-
 .back-button-cont{
   display: flex;
   justify-content: center;
 }
-.sidenav a:hover, .dropdown button:hover {
+
+
+/* Hover button colors */
+.sidenav a:hover, .dropdown button:hover, .back-button:hover {
   color: #ff9f0f;
   background-color: rgb(104, 39, 9);
 }
@@ -85,14 +99,7 @@
 .dropdown-content a{
   display: flex;
   font-size: 15px;
-  margin-right: 40px;
+  padding-left: 40px;
   background-color: rgb(88, 88, 88);
-}
-.open {
-  width: 250px;
-  -webkit-backface-visibility:  hidden;
-  -moz-tap-highlight-color: transparent;
-  -ms-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: transparent;
 }
 
