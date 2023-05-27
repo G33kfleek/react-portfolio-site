@@ -63,13 +63,13 @@ function LandingPage() {
               <Typewriter
                 options={{
                   strings: [
-                    'Website is still Development 🛠⛏💻',
+                    'Website is still in Development 🛠⛏💻',
                     'Coming Soon...',
                     "Here's my Contacts though😎",
                     'Phone : +254 798362712',
                     'Email: braddconnel@gmail.com',
                     '...aaaaand laslty',
-                    ' heres my linktree 👌😉...',
+                    ' heres my linktree so you can checkout some of my work👌😉...',
                     'https://linktr.ee/g33kfleek',
                   ],
                   autoStart: true,
