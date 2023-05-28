@@ -83,7 +83,7 @@ function SideNavigation() {
               <div className="dropdown-content">
                 <a href="#">Graphic Design</a>
                 <a href="#"> Video Edits</a>
-                <a href="#">Coder</a>
+                <a href="#">Code Projects</a>
               </div>
             )}
             <a href="#">
