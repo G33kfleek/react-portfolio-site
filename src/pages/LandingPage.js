@@ -3,6 +3,7 @@ import '../stylesheets/LandingPage.css'; // Import the CSS file
 import '../stylesheets/GeekAnimation.css';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import SideNavigation from '../components/SideNav';
+import ContactForm from '../components/ContactForm';
 import DefButton from '../components/DefaultButton';
 import { useSpring, animated } from 'react-spring';
 import Typewriter from 'typewriter-effect';
@@ -82,6 +83,7 @@ function LandingPage() {
             </div>
           </Element>
         </div>
+        <ContactForm/>
         <ScrollToTopButton />
       </animated.div>
     </div>
