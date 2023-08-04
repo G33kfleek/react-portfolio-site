@@ -5,11 +5,12 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onSubmit = async (e) => {
-  
+   
     e.preventDefault();
+    console.log("Ready to Send");
     setFormStatus('Submitting...');
     const { name, email, message } = e.target.elements;
-
+    
     try {
       let details = {
         name: name.value,
