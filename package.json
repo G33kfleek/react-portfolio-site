@@ -6,7 +6,11 @@
     "@babel/runtime": "7.21.5",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.1",
+    "concurrently": "^8.2.0",
     "core-js-pure": "3.30.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-avatar": "5.0.3",
@@ -20,7 +24,9 @@
     "typewriter-effect": "2.19.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "react-scripts start",
+    "server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

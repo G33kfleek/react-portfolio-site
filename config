@@ -1,0 +1,6 @@
+const config = {
+  apiBaseUrl: 'https://api.example.com',
+  apiKey: 'your-api-key',
+};
+
+export default config;

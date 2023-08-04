@@ -5,20 +5,28 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onSubmit = async (e) => {
+  
     e.preventDefault();
     setFormStatus('Submitting...');
     const { name, email, message } = e.target.elements;
 
     try {
-      // You can add your API call or submission logic here
-      // For demonstration purposes, I'm using a setTimeout to simulate an asynchronous operation
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      let conFom = {
+      let details = {
         name: name.value,
         email: email.value,
         message: message.value,
       };
+
+      let response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(details),
+      });
+      let result = await response.json();
+      alert(result.status);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
       console.log(conFom);
       setIsSubmitted(true);
@@ -52,7 +60,7 @@ const ContactForm = () => {
             </label>
             <textarea className="form-control" id="message" required />
           </div>
-          <button className="btn btn-danger" type="submit">
+          <button className="btn btn-danger" type="submit" onClick = {onSubmit}>
             {formStatus}
           </button>
         </form>
