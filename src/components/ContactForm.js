@@ -5,9 +5,7 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onSubmit = async (e) => {
-   
     e.preventDefault();
-    console.log("Ready to Send");
     setFormStatus('Submitting...');
     const { name, email, message } = e.target.elements;
     
@@ -18,7 +16,7 @@ const ContactForm = () => {
         message: message.value,
       };
 
-      let response = await fetch("http://localhost:5000/contact", {
+      let response = await fetch("http://localhost:5000/server", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
