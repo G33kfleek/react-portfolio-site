@@ -5,6 +5,7 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 import SideNavigation from '../components/SideNav';
 import ContactForm from '../components/ContactForm';
 import DefButton from '../components/DefaultButton';
+import BlogList from '../components/BlogList';
 import { useSpring, animated } from 'react-spring';
 import Typewriter from 'typewriter-effect';
 import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
@@ -83,6 +84,7 @@ function LandingPage() {
             </div>
           </Element>
         </div>
+        <BlogList/>
         <ContactForm/>
         <ScrollToTopButton />
       </animated.div>
