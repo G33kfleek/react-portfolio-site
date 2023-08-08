@@ -24,7 +24,6 @@ function LandingPage() {
       <animated.div style={styles}>
         <div className="welcome-screen">
           <Element name="section0" className="section">
-            <SideNavigation />
           </Element>
           <Element name="section1" className="section">
             <div className="welcome-content">
