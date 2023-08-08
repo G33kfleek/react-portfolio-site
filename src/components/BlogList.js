@@ -1,5 +1,5 @@
 // src/components/BlogList.js
-
+import '../stylesheets/BlogList.css';
 import React, { useState, useEffect } from 'react';
 
 const BlogList = () => {
@@ -40,19 +40,21 @@ const BlogList = () => {
     return <p>Error: {error}</p>;
   }
 
+
   return (
-    <div>
-      <h1>Recent Blogs</h1>
-      <ul>
+    <div className="blog-list-container">
+      <h1 className="blog-list-title">Recent Blogs</h1>
+      <ul className="blog-items">
         {blogs.map((blog) => (
-          <li key={blog.id}>
-            <h2>{blog.title}</h2>
-           
+          <li className="blog-item" key={blog.id}>
+            <h2 className="blog-title">{blog.title}</h2>
+            <div className="blog-content" dangerouslySetInnerHTML={{ __html: blog.content }} />
           </li>
         ))}
       </ul>
     </div>
   );
 };
+
 
 export default BlogList;

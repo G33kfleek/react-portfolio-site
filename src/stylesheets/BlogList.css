@@ -1,0 +1,56 @@
+/* src/components/BlogList.css */
+
+.blog-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-list-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.blog-items {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-item {
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-content {
+  font-size: 16px;
+}
+
+/* Responsive images and videos */
+.blog-content img,
+.blog-content video,
+.blog-content iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive YouTube videos */
+.blog-content .youtube-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.blog-content .youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
